@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="Myfirstwebpage.Master.Frontend" %>
+
+<%@ Register Src="~/Controls/Banner.ascx" TagName="Banner" TagPrefix="ucl" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script src="../Scripts/modernizr-2.8.3.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="MainMenu">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true">
+            <Scripts>
+                <asp:ScriptReference Name="jquery" />
+            </Scripts>
+        </asp:ScriptManager>
+        <div id="PageWrapper">
+            <header><a href="/"></a> </header>
+            <nav>
+                <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1"
+                    Orientation="Horizontal" StaticEnableDefaultPopOutImage="False"></asp:Menu>
+                <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ShowExpandCollapse="False" style="margin-left: 101px" Width="173px">
+                    <LevelStyles>
+                        <asp:TreeNodeStyle CssClass="FirstLevelMenuItems" />
+                    </LevelStyles>
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+            </nav>
+            <section id="MainContent">
+                <asp:SiteMapPath ID="SiteMapPath1" runat="server"></asp:SiteMapPath><br/><br/>
+            <asp:ContentPlaceHolder ID="cpMainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            </section>
+            <aside id="Sidebar">
+                Vui lòng chọn Theme <br />
+                <asp:DropDownList ID="ThemeList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ThemeList_SelectedIndexChanged">
+                    <asp:ListItem>Monochrome</asp:ListItem>
+                    <asp:ListItem>DarkGray</asp:ListItem>
+                </asp:DropDownList>
+                <br />
+                <br />
+                <br />
+                <nhatminh:banner ID="Banner1" runat="server" DisplayDirection="Vertical" />
+            </aside>
+            <footer>Copyright by Như Thịnh © 2020</footer>
+        </div>
+    </form>
+</body>
+</html>

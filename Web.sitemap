@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/" title="Home"  description="Home" >
+	<siteMapNode url="~/Site/MyContent" title="Home"  description="Home" />
+
+
+		<siteMapNode url="~/Reviews/Default" title="Reviews"  description="Reviews publish on this site" >
+			<siteMapNode url="~/Reviews/AllByGenre" title="By Genre" description="All reviews grouped by Genre" />
+			<siteMapNode url="~/Reviews/All" title="All Reviews" description="All Reviews" />
+		</siteMapNode>
+
+		<siteMapNode url ="~/AboutUs/Default" title="About" description="About this site">
+			<siteMapNode url="~/AboutUs/Contact" title="Contact us" description="Contact us"/>
+			<siteMapNode url="~/AboutUs/AboutUs" title="About us" description="About us"/>
+		</siteMapNode>
+		
+		<siteMapNode url="~/Site/Login" title="Login" description="Log in to this web site"/>
+	</siteMapNode>
+</siteMap>

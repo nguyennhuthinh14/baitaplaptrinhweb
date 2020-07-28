@@ -1,0 +1,7 @@
+﻿Xin chào,
+ Đây là thông tin một người dùng vừa gửi đến site:
+ Tên:			##Name##
+ Email;			##Email##
+ Số cá nhân:	##HomePhone##
+ Số cơ quan:	##BusinessPhone##
+ Chú thích:		##Comments##

@@ -1,0 +1,35 @@
+﻿body {
+    background-image:
+}
+h1 {
+    color: yellow;
+    width: 187px;
+    margin: auto;
+    border: thick double red;
+    border-radius: 10px;
+}
+.intro {
+    background-color: #28e42c;
+    border: thick double #000000;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    float: left;
+}
+.introduction {
+            width:630px;
+            margin:auto;
+}
+.intro2 {
+    background-color: yellow;
+    border: thick double #000000;
+    text-align: center;
+    width: 300px;
+    height:190px;
+    border-radius: 10px;
+    float: right;
+}
+.button {
+    background: #00FFFF;
+    color: red
+}
